@@ -16,5 +16,5 @@ RUN set -x \
     && apk del git
 
 EXPOSE 3001
-VOLUME [ "/node-openid-client/example/" ]
+WORKDIR "/node-openid-client/"
 CMD [ "node", "/node-openid-client/example/index.js" ]
