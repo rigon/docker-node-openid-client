@@ -2,7 +2,7 @@ FROM node:alpine
 
 # Choose which version you want
 # follow Git terminology to checkout tags: "tags/v<version>"
-ENV VERSION master
+ENV VERSION tags/v1.20.0
 
 RUN set -x \
     && apk update \
